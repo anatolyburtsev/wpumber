@@ -9,3 +9,4 @@ class DB:
 
     def put_many(self, documents):
         return self.collection.insert_many(documents).inserted_ids
+
