@@ -10,3 +10,9 @@ class DB:
     def put_many(self, documents):
         return self.collection.insert_many(documents).inserted_ids
 
+    def put(self, document):
+        return self.collection.insert_one(document).inserted_id
+
+    def get_ids(self):
+        return self.collection.find({}, {"account_id": 1, "_id": 0})
+

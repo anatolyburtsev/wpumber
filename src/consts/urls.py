@@ -1,1 +1,2 @@
 account_info_url = "https://api.wotblitz.ru/wotb/account/info/?application_id={token}&account_id={ids}"
+tank_stats_url = "https://api.wotblitz.ru/wotb/tanks/stats/?application_id={token}&account_id={id}"
